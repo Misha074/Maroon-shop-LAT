@@ -1,11 +1,13 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
+  // padding: 10px 20px;
+  padding: 13px 27px 16px;
 
-  color: $color-default-white;
+  color: $color-midnight;
 
-  background-color: $color-neon-blue;
-  border: none;
+  background-color: transparent;
+  // border: none;
+  border: 1px solid $color-heather;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -24,3 +26,4 @@
     opacity: 0.8;
   }
 }
+

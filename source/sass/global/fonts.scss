@@ -9,11 +9,37 @@
 // }
 
 @font-face {
+  font-family: "Mplus";
   font-style: normal;
   font-weight: 400;
-  font-family: "";
 
   font-display: swap;
   src:
-    url("../fonts/.woff2") format("woff2");
+    url("../fonts/m-plus-1p-v27-cyrillic_latin-regular.woff2") format("woff2"),
+    url("../fonts/m-plus-1p-v27-cyrillic_latin-regular.woff") format("woff");
 }
+
+@font-face {
+  font-family: "Mplus";
+  font-style: normal;
+  font-weight: 500;
+
+  font-display: swap;
+  src:
+    url("../fonts/m-plus-1p-v27-cyrillic_latin-regular500.woff2") format("woff2"),
+    url("../fonts/m-plus-1p-v27-cyrillic_latin-regular500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+
+  font-display: swap;
+  src:
+    url("../fonts/raleway-v28-cyrillic_latin-500.woff2") format("woff2"),
+    url("../fonts/raleway-v28-cyrillic_latin-500.woff") format("woff");
+}
+
+$font-mplus-sans-serif: "Mplus", "Arial", "Helvetica CY", "Nimbus Sans L", sans-serif;
+$font-raleway-sans-serif: "Raleway", "Arial", sans-serif;
