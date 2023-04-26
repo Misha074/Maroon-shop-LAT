@@ -17,10 +17,289 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper">
+            <button class="header__logo logo">
+              <a class="logo__home-link" href="index.html">
+                <!--Свгшка логотип-->
+                Maroon
+              </a>
+            </button>
+            <ul class="header__nav nav">
+              <li class="nav__item">
+                Каталог
+              </li>
+              <li class="nav__item">
+                О нас
+              </li>
+              <li class="nav__item">
+                Контакты
+              </li>
+            </ul>
+            <div class="header__buttons header-buttons">
+              <a class="header-buttons__cart">
+                Свгшка корзинка
+                <span class="header-buttons__cart-text visually-hidden">
+                  Перейти в корзину
+                </span>
+              </a>
+              <a class="header-buttons__auth">
+                Свгшка человечек
+                <span class="header-buttons__auth-text visually-hidden">
+                  Авторизация
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
       </header>
       <main>
+        <section class="catalog">
+          <div class="catalog__container container">
+            <div class="catalog__head">
+              <h2 class="catalog__header">Каталог</h2>
+              <button class="catalog__filter-button">
+                Фильтр
+              </button>
+              <form class="catalog__filter filter visually-hidden" action="https://echo.htmlacademy.ru" method="GET">
+                <fieldset class="filter__column">
+                  <legend class="filter__column-header">Уход для лица</legend>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-cream" name="face-care-cream" checked>
+                    <label class="filter__label" for="face-cream">Крема</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-serum" name="face-care-serum" checked>
+                    <label class="filter__label" for="face-serum">Сыворотки</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-mask" name="face-care-mask" checked>
+                    <label class="filter__label" for="face-mask">Маски</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-foam" name="face-care-foam">
+                    <label class="filter__label" for="face-foam">Пенки</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-tonic" name="face-care-tonic">
+                    <label class="filter__label" for="face-tonic">Тоники</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="face-powder" name="face-care-powder" checked>
+                    <label class="filter__label" for="face-powder">Пудры</label>
+                  </div>
+                </fieldset>
 
+                <fieldset class="filter__column">
+                  <legend class="filter__column-header">Уход для тела</legend>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-cream" name="body-care-cream">
+                    <label class="filter__label" for="body-cream">Крема</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-oil" name="body-care-oil" checked>
+                    <label class="filter__label" for="body-oil">Масла</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-scrub" name="body-care-scrub">
+                    <label class="filter__label" for="body-scrub">Скрабы</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-soap" name="body-care-soap" checked>
+                    <label class="filter__label" for="body-soap">Мыло</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-bathbomb" name="body-care-bathbomb" checked>
+                    <label class="filter__label" for="body-bathbomb">Бомбочки для ванны</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="body-bathsalt" name="body-care-bathsalt">
+                    <label class="filter__label" for="body-bathsalt">Соль для ванны</label>
+                  </div>
+                </fieldset>
+
+                <fieldset class="filter__column">
+                  <legend class="filter__column-header">Тип кожи</legend>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="skin-normal" name="skin-normal">
+                    <label class="filter__label" for="skin-normal">Нормальная</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="skin-dry" name="skin-dry" checked>
+                    <label class="filter__label" for="skin-dry">Сухая</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="skin-oily" name="skin-oily">
+                    <label class="filter__label" for="skin-oily">Жирная</label>
+                  </div>
+                  <div class="filter__row" style="display: flex;">
+                    <input class="custom-input" type="checkbox" id="skin-combined" name="skin-combined" checked>
+                    <label class="filter__label" for="skin-combined">Комбинированная</label>
+                  </div>
+                </fieldset>
+                <div class="filter__buttons">
+                  <input type="submit" value="Применить">
+                  <input type="reset" value="Сбросить">
+                </div>
+              </form>
+            </div>
+            <div class="catalog__body">
+              <ul class="catalog__list">
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">High</h4>
+                      <span class="product__price">990 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">крем для лица</span>
+                      <span class="product__value">50ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Rest</h4>
+                      <span class="product__price">690 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">минеральная пудра</span>
+                      <span class="product__value">20g</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Rose</h4>
+                      <span class="product__price">890 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">крем для лица</span>
+                      <span class="product__value">50ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Milk</h4>
+                      <span class="product__price">790 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">масло для тела</span>
+                      <span class="product__value">150ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Paradise</h4>
+                      <span class="product__price">590 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">Минеральная пудра</span>
+                      <span class="product__value">15g</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Sun</h4>
+                      <span class="product__price">90 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">бомбочка для ванны</span>
+                      <span class="product__value">20g</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Violet</h4>
+                      <span class="product__price">890 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">крем для лица</span>
+                      <span class="product__value">50ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Clean</h4>
+                      <span class="product__price">490 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">маска для лица</span>
+                      <span class="product__value">100g</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Coconut</h4>
+                      <span class="product__price">990 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">масло для тела</span>
+                      <span class="product__value">300ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Lavender</h4>
+                      <span class="product__price">290 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">мыло ручной работы</span>
+                      <span class="product__value">50g</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Lotos</h4>
+                      <span class="product__price">890 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">маска для лица</span>
+                      <span class="product__value">50ml</span>
+                    </p>
+                  </a>
+                </li>
+                <li class="catalog__item product">
+                  <a class="product__link" href="">
+                    <p class="product__text">
+                      <h4 class="product__name">Earth</h4>
+                      <span class="product__price">90 &#8381;</span>
+                    </p>
+                    <p class="product__text">
+                      <span class="product__description">бомбочка для ванны</span>
+                      <span class="product__value">20g</span>
+                    </p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+        <section class="recently">
+          <div class="recently__container container">
+            <h2 class="Вы недавно смотрели"></h2>
+          </div>
+        </section>
       </main>
       <footer>
       </footer>
