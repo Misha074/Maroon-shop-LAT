@@ -7,7 +7,8 @@
 
   background-color: transparent;
   // border: none;
-  border: 1px solid $color-heather;
+  // border: 1px solid $color-heather;
+  border: none;
   cursor: pointer;
 
   transition: opacity $trans-default;
@@ -26,4 +27,3 @@
     opacity: 0.8;
   }
 }
-

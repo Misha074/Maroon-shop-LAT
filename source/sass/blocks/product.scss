@@ -1,0 +1,41 @@
+.product {
+  position: relative;
+}
+
+
+.product__text-container {
+  position: absolute;
+  bottom: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.product__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product__name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "Raleway";
+}
+
+.product__price {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+}
+
+.product__description {
+  font-size: 13px;
+  line-height: 19px;
+  color: $color-grey-chateau;
+}
+
+.product__value {
+  font-size: 13px;
+  line-height: 19px;
+  color: $color-grey-chateau;
+}

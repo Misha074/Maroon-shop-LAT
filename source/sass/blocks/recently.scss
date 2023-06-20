@@ -1,0 +1,30 @@
+.recently__container {
+  @include main-container-margin-bottom;
+}
+
+.recently__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.recently__slider {
+  position: relative;
+}
+
+.recently__button--prev {
+  position: absolute;
+  bottom: -43px;
+  right: 43px;
+}
+
+.recently__button--next {
+  position: absolute;
+  right: -15px;
+}
+
+.recently__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-top: 60px;
+}

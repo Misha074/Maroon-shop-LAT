@@ -1,0 +1,30 @@
+.cognate__container {
+  @include main-container-margin-bottom;
+}
+
+.cognate__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.cognate__slider {
+  position: relative;
+}
+
+.cognate__button--prev {
+  position: absolute;
+  bottom: -43px;
+  right: 43px;
+}
+
+.cognate__button--next {
+  position: absolute;
+  right: -15px;
+}
+
+.cognate__list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  padding-top: 60px;
+}

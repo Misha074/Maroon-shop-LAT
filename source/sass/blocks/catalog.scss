@@ -1,0 +1,39 @@
+.catalog__container {
+  @include main-container-margin-bottom;
+}
+
+.catalog__head {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 48px;
+}
+
+.catalog__header {
+  margin-bottom: 60px;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.catalog__slider {
+  position: relative;
+}
+
+.catalog__slide {
+  max-height: 1110px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+
+.catalog__button--prev {
+  position: absolute;
+  bottom: -43px;
+  right: 57px;
+}
+
+.catalog__button--next {
+  position: absolute;
+  bottom: -43px;
+  right: 0;
+}

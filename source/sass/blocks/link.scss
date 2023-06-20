@@ -1,0 +1,18 @@
+.link {
+  padding: 13px 27px 16px;
+  width: fit-content;
+  border: 1px solid $color-heather;
+  border-radius: 2px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 10px;
+  color: $color-midnight;
+
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}

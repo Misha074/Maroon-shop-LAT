@@ -1,0 +1,33 @@
+.contacts__container {
+  @include main-container-margin-bottom;
+}
+.contacts__content {
+  @include offset__content;
+}
+
+.contacts__text-container {
+  @include offset__left-container;
+}
+
+
+.contacts__text {
+  @include offset__text;
+
+  span {
+    font-weight: 500
+  }
+
+  span + a {
+    margin-top: 20px;
+    margin-bottom: 35px;
+  }
+}
+
+.contacts__map-container {
+  @include offset__right-container;
+}
+
+.contacts__map {
+  max-width: 670px;
+  max-height: 422px;
+}
