@@ -33,12 +33,21 @@ body {
   width: 100%;
   height: 100%;
 
-  background-color: $color-default-white;
+  background-color: $color-ivory;
+  color: $color-midnight;
 }
 
 a {
   color: $color-default-black;
   text-decoration: none;
+  display: block;
+
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+  @include hover-focus {
+    opacity: 0.8;
+  }
 }
 
 img,
@@ -50,6 +59,30 @@ video {
 
 textarea {
   resize: none;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Raleway";
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+p {
+  margin: 0;
 }
 
 // chrome autofill background removal

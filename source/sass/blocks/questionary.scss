@@ -1,0 +1,25 @@
+.questionary__container {
+  @include main-container-margin-bottom;
+}
+
+.questionary__content {
+  @include offset__content;
+}
+
+.questionary__text-container {
+  @include offset__left-container;
+}
+
+
+.questionary__text {
+  @include offset__text;
+}
+
+.questionary__link {
+  margin-top: 45px;
+  display: inline-block;
+}
+
+.questionary__image-container {
+  @include offset__right-container;
+}

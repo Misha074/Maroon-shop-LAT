@@ -1,107 +1,129 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Натуральная косметика для бережного ухода за кожей">
-    <title>Тестовая страница</title>
-    <link rel="stylesheet" href="css/style.min.css">
-    <link rel="icon" href="favicon.ico">
-    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/raleway-v28-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
-  </head>
-  <body>
-    <div class="wrapper">
-      <header class="header">
-        <div class="container">
-          <div class="header__wrapper">
-            <button class="header__logo logo">
-              <a class="logo__home-link" href="index.html">
-                <!--Свгшка логотип-->
-                Maroon
-              </a>
-            </button>
-            <ul class="header__nav nav">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Натуральная косметика для бережного ухода за кожей">
+  <title>Тестовая страница</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-v28-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="header__container header__container--absolute container">
+        <div class="header__content">
+          <div class="header__logo logo">
+            <a class="logo__home-link" href="./index.html">
+              <svg width="131" height="21" viewBox="0 0 131 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#logo-icon"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
               <li class="nav__item">
-                Каталог
+                <a class="nav__link" href="./catalog.html">
+                  Каталог
+                </a>
               </li>
               <li class="nav__item">
-                О нас
+                <a class="nav__link" href="#">
+                  О нас
+                </a>
               </li>
               <li class="nav__item">
-                Контакты
+                <a class="nav__link" href="./card.html">
+                  Магазины
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Контакты
+                </a>
               </li>
             </ul>
-            <div class="header__buttons header-buttons">
-              <a class="header-buttons__cart">
-                Свгшка корзинка
-                <span class="header-buttons__cart-text visually-hidden">
-                  Перейти в корзину
-                </span>
-              </a>
-              <a class="header-buttons__auth">
-                Свгшка человечек
-                <span class="header-buttons__auth-text visually-hidden">
-                  Авторизация
-                </span>
-              </a>
-            </div>
+          </nav>
+          <div class="header__buttons header-buttons">
+            <button class="header-buttons__button btn" type="button" aria-label="Перейти в корзину">
+              <svg width="16" height="21" viewBox="0 0 16 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#authentication-icon"></use>
+              </svg>
+            </button>
+            <button class="header-buttons__button btn" type="button" aria-label="Войти в личный кабинет">
+              <svg width="18" height="21" viewbox="0 0 18 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#basket-icon"></use>
+              </svg>
+            </button>
           </div>
         </div>
-      </header>
-      <main>
-        <section class="intro">
-          <div class="intro__container container">
-            <div class="intro__text intro-text">
-              <h1 class="intro-text__header">
-                Maroon
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="intro__container container">
+          <div class="intro__content">
+            <div class="intro__item intro-item">
+              <picture>
+                <source media="(max-width: 320px)"
+                  srcset="./img/intro-facecare-mobile.webp, img/intro-facecare-mobile@2x.webp 2x">
+                <source media="(max-width: 768px)"
+                  srcset="./img/intro-facecare-tablet.webp, img/intro-facecare-tablet@2x.webp 2x">
+                <source srcset="./img/intro-facecare-desktop.webp, img/intro-facecare-desktop@2x.webp 2x">
+                <img src="./img/intro-facecare-desktop.png" srcset="./img/products/facecare-desktop@2x.png"
+                  alt="Баночки с белым кремом и лист папоротника">
+              </picture>
+              <button class="intro-item__more-button btn">
+                Уход для лица
+                <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="intro__text">
+              <h1 class="intro__header">
+                MAROON
               </h1>
-              <div class="intro-text__subtitle">
-                Натуральная косметика для бережного ухода за кожей
+              <div class="intro__subtitle">
+                Натуральная косметика
+                <br> для бережного ухода за кожей
               </div>
-              <a class="intro-text__more">
+              <a class="intro__more link">
                 Подробнее
               </a>
             </div>
-            <div class="intro__content-wrapper">
-              <div class="intro__item intro-item">
-                <img class="intro-item__img" src="" alt="">
-                <div class="intro-item__info">
-                  <div class="intro-item__title">
-                    Уход для лица
-                  </div>
-                  <a class="intro-item__more">
-                    <!--Свгшка стрелочка-->
-                    <span class="intro-item__more-text visually-hidden">
-                      Перейти в раздел уход для лица
-                    </span>
-                  </a>
-                </div>
-              </div>
-              <div class="intro__item intro-item">
-                <img class="intro-item__img" src="" alt="">
-                <div class="intro-item__info">
-                  <div class="intro-item__title">
-                    Уход для тела
-                  </div>
-                  <a class="intro-item__more">
-                    <!--Свгшка стрелочка-->
-                    <span class="intro-item__more-text visually-hidden">
-                      Перейти в раздел уход для тела
-                    </span>
-                  </a>
-                </div>
-              </div>
+            <div class="intro__item intro-item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/intro-bodycare-mobile.webp, img/intro-bodycare-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/intro-bodycare-tablet.webp, img/intro-bodycare-tablet@2x.webp 2x">
+                <source srcset="./img/intro-bodycare-desktop.webp, img/intro-bodycare-desktop@2x.webp 2x">
+                <img src="./img/intro-bodycare-desktop.png" srcset="./img/products/bodycare-desktop@2x.png"
+                  alt="Баночки с белым кремом и лист подорожника">
+              </picture>
+              <button class="intro-item__more-button btn">
+                Уход для Тела
+                <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </div>
           </div>
-        </section>
-        <section class="bestsellers">
-          <div class="bestsellers__container container">
+        </div>
+      </section>
+      <section class="bestsellers" id="bestsellers" bestsellers>
+        <div class="bestsellers__container container">
+          <div class="bestsellers__content">
             <div class="bestsellers__info">
               <h2 class="bestsellers__header">
                 Бестселлеры
@@ -109,17 +131,122 @@
               <div class="bestsellers__subtitle">
                 Легендарные продукты, завоевавшие любовь наших клиентов
               </div>
-              <a class="bestsellers__more" href="">
+              <a class="bestsellers__more link" href="">
                 Смотреть всё
               </a>
             </div>
-            <div class="bestsellers__slaider">
+            <div class="bestsellers__slider">
+              <button class="bestsellers__button bestsellers__button--prev btn" data-swiper-bestsellers-prev
+                aria-label="предыдущий слайд.">
+                <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#left-arrow-icon"></use>
+                </svg>
+              </button>
+              <div class="bestsellers__swiper swiper swiper-bestsellers">
+                <ul class="swiper-wrapper swiper-bestsellers-wrapper">
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/high-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">High</p>
+                        <p class="bestsellers__type">крем для лица</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <picture>
+                        <source media="(max-width: 320px)"
+                          srcset="./img/products/rest-mobile.webp, img/products/rest-mobile@2x.webp 2x">
+                        <source media="(max-width: 768px)"
+                          srcset="./img/products/rest-tablet.webp, img/products/rest-tablet@2x.webp 2x">
+                        <img src="./img/products/rest-desktop.webp" srcset="./img/products/rest-desktop@2x.webp"
+                          width="230" height="312" alt="текст заглушка">
+                      </picture>
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Rest</p>
+                        <p class="bestsellers__type">минеральная пудра</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/rose-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Rose</p>
+                        <p class="bestsellers__type">крем для лица</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/milk-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Milk</p>
+                        <p class="bestsellers__type">масло для тела</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/high-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">High II</p>
+                        <p class="bestsellers__type">крем для лица</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/rest-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Rest II</p>
+                        <p class="bestsellers__type">минеральная пудра</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/rose-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Rose II</p>
+                        <p class="bestsellers__type">крем для лица</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
+                    <div class="bestsellers__item" href="">
+                      <img src="./img/products/milk-desktop.png" width="230" height="312">
+                      <div class="bestsellers__text-container">
+                        <p class="bestsellers__name">Milk II</p>
+                        <p class="bestsellers__type">масло для тела</p>
+                        <a class="bestsellers__more-link link">Подробнее</a>
+                      </div>
+                    </div>
+                  </li>
 
+                </ul>
+              </div>
+              <button class="bestsellers__button bestsellers__button--next btn" data-swiper-bestsellers-next
+                aria-label="следующий слайд.">
+                <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <use xlink:href="./img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </div>
           </div>
-        </section>
-        <section class="promo">
-          <div class="promo__container container">
+        </div>
+      </section>
+      <section class="promo">
+        <div class="promo__container container">
+          <div class="promo__content">
             <div class="promo__text">
               <h2 class="promo__header">
                 Встречайте весну вместе с нами
@@ -127,174 +254,269 @@
               <div class="promo__subtitle">
                 Попробуйте новую коллекцию ухаживающих средств для лица с SPF защитой
               </div>
-              <a class="promo__more" href="">
+              <a class="promo__more link" href="">
                 Подробнее
               </a>
             </div>
           </div>
-        </section>
-        <section class="questionary">
-          <div class="questionary__container container">
-            <div class="questionary__info">
+        </div>
+      </section>
+      <section class="questionary">
+        <div class="questionary__container container">
+          <div class="questionary__content">
+            <div class="questionary__text-container">
               <h2 class="questionary__header">
                 Индивидуальный уход
               </h2>
               <div class="questionary__text">
-                <p>Не всегда очевидно, какие элементы и минералы необходимы коже, а многочисленные эксперименты с разными средствами только ухудшают ее качество.</p>
-                <p>Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место жительства и другие факторы.</p>
+                <p>Не всегда очевидно, какие элементы и минералы необходимы коже, а многочисленные эксперименты с
+                  разными
+                  средствами только ухудшают ее качество.</p>
+                <p>Заполните анкету, и мы подберем уход, подходящий именно вам, учитывая ваш образ жизни, место
+                  жительства
+                  и другие факторы.</p>
               </div>
-              <a class="questionary__link" href="">
+              <a class="questionary__link link" href="">
                 Заполнить анкету
               </a>
             </div>
             <div class="questionary__image-container">
-              <img class="questionary__image" src="" alt="">
+              <img width="670" height="451" src="./img/questionary-image-desktop.png"
+                alt="Два бутылька масла, колба с багровой солью и куски натурального мыла на фоне сухоцветов и двух крупных зеленых листов">
             </div>
           </div>
-        </section>
-        <section class="aboutus">
-          <div class="aboutus__container container">
-            <h2 class="aboutus__header visually-hidden">
-              О нас
+
+        </div>
+      </section>
+      <section class="aboutus">
+        <div class="aboutus__container container">
+          <h2 class="aboutus__header visually-hidden">
+            О нас
+          </h2>
+          <p class="aboutus__title">
+            “Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех, кто хочет заботиться о себе и
+            своем теле”
+          </p>
+          <a class="aboutus__more link" href="">
+            Наша история
+          </a>
+        </div>
+      </section>
+      <section class="joinus">
+        <div class="joinus__container container">
+          <ul class="joinus__collage collage">
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage1-mobile.webp, /img/joinus-collage/joinus-collage1-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage1-tablet.webp, /img/joinus-collage/joinus-collage1-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage1-desktop.webp, /img/joinus-collage/joinus-collage1-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage1-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage2-mobile.webp, /img/joinus-collage/joinus-collage2-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage2-tablet.webp, /img/joinus-collage/joinus-collage2-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage2-desktop.webp, /img/joinus-collage/joinus-collage2-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage2-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage3-mobile.webp, /img/joinus-collage/joinus-collage3-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage3-tablet.webp, /img/joinus-collage/joinus-collage3-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage3-desktop.webp, /img/joinus-collage/joinus-collage3-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage2-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage4-mobile.webp, /img/joinus-collage/joinus-collage4-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage4-tablet.webp, /img/joinus-collage/joinus-collage4-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage4-desktop.webp, /img/joinus-collage/joinus-collage4-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage4-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage5-mobile.webp, /img/joinus-collage/joinus-collage5-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage5-tablet.webp, /img/joinus-collage/joinus-collage5-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage5-desktop.webp, /img/joinus-collage/joinus-collage5-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage5-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+            <li class="collage__item">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/joinus-collage/joinus-collage6-mobile.webp, /img/joinus-collage/joinus-collage6-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage6-tablet.webp, /img/joinus-collage/joinus-collage6-tablet@2x.webp 2x">
+                <source type="image/webp"
+                  srcset="./img/joinus-collage/joinus-collage6-desktop.webp, /img/joinus-collage/joinus-collage6-desktop@2x.webp 2x">
+                <img width="237" height="233" src="./img/joinus-collage6-desktop.webp" alt="текст заглушка альта">
+              </picture>
+            </li>
+          </ul>
+          <div class="joinus__info">
+            <h2 class="joinus__header">
+              Присоединяйтесь к нам
             </h2>
-            <p class="aboutus__title">
-              “Мы стремимся сделать уход за кожей доступным и приятным ритуалом для всех, кто хочет заботиться о себе и своем теле”
-            </p>
-            <a class="aboutus__more" href="">
-              Наша история
+            <div class="joinus__text">
+              Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми
+            </div>
+            <a class="joinus__subscribe link" href="">
+              Подписаться
             </a>
           </div>
-        </section>
-        <section class="joinus">
-          <div class="joinus__container container">
-            <ul class="joinus__collage collage">
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-              <li class="collage__item">
-                <img class="collage__img" src="" alt="">
-              </li>
-            </ul>
-            <div class="joinus__info">
-              <h2 class="joinus__header">
-                Присоединяйтесь к нам
-              </h2>
-              <div class="joinus__text">
-                Подпишитесь на наш аккаунт @marooncare и узнавайте о новиках и акциях первыми
-              </div>
-              <a class="joinus__subscribe" href="">
-                Подписаться
-              </a>
-            </div>
-          </div>
-        </section>
-        <section class="contacts">
-          <div class="contacts__container container">
-            <div class="contacts__info">
+        </div>
+      </section>
+      <section class="contacts">
+        <div class="contacts__container container">
+          <div class="contacts__content">
+            <div class="contacts__text-container">
               <h2 class="contacts__header">
                 Контакты
               </h2>
-              <div class="contacts__address">
-                <span>Адрес</span>
-                Санкт-Петербург,<br>
-                ул. Большая Конюшенная, 19
-              </div>
-              <div class="contacts__phone">
-                <span>Телефон</span>
-                <a href="tel:+79238889060">
-                  +7 (923) 888-90-60
-                </a>
-              </div>
-              <div class="contacts__email">
-                <span>E-mail</span>
-                <a href="mailto:info@maroon.ru">
-                  info@maroon.ru
-                </a>
-              </div>
-              <ul class="contacts__social social">
-                <li class="social__item">
-                  <a class="social__link" href="">
-                    <!--Свгшка соцсети-->
-                    <span class="visually-hidden">Аккаунт в facebook</span>
+              <div class="contacts__text">
+                <div class="contacts__address">
+                  <span>Адрес</span>
+                  <a href="https://goo.gl/maps/DpBHPZiuXpsNKmBF9">
+                    Санкт-Петербург,
+                    <br>ул. Большая Конюшенная, 19</a>
+                </div>
+                <div class="contacts__phone">
+                  <span>Телефон</span>
+                  <a href="tel:+79238889060">
+                    +7 (923) 888-90-60
                   </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="">
-                    <!--Свгшка соцсети-->
-                    <span class="visually-hidden">Аккаунт в инстаграм</span>
+                </div>
+                <div class="contacts__email">
+                  <span>E-mail</span>
+                  <a href="mailto:info@maroon.ru">
+                    info@maroon.ru
                   </a>
-                </li>
-                <li class="social__item">
-                  <a class="social__link" href="">
-                    <!--Свгшка соцсети-->
-                    <span class="visually-hidden">Аккаунт в твиттер</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <!--Тут надо вставить iframe карту-->
-          </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer-container container">
-          <div class="footer__logo logo">
-            <a class="logo__home-link" href="index.html">
-              <!--Свгшка логотип-->
-              Maroon
-            </a>
-          </div>
-          <ul class="footer__nav nav">
-            <li class="nav__item">
-              Каталог
-            </li>
-            <li class="nav__item">
-              О нас
-            </li>
-            <li class="nav__item">
-              Магазины
-            </li>
-            <li class="nav__item">
-              Контакты
-            </li>
-          </ul>
-          <ul class="footer__social social">
-            <li class="social__item">
-              <a class="social__link" href="">
-                <!--Свгшка соцсети-->
-                <span class="visually-hidden">Аккаунт в facebook</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="">
-                <!--Свгшка соцсети-->
-                <span class="visually-hidden">Аккаунт в инстаграм</span>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link" href="">
-                <!--Свгшка соцсети-->
-                <span class="visually-hidden">Аккаунт в твиттер</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+                </div>
+                <ul class="contacts__social social">
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в facebook">
+                      <svg width="11" height="18" viewbox="0 0 11 18" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#facebook-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в instagram">
+                      <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__item">
+                    <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в twitter">
+                      <svg width="20" height="17" viewbox="0 0 20 17" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
-    <!-- Модалки
+            </div>
+            <div class="contacts__map-container">
+              <iframe class="contacts__map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989428318503!2d30.320508376407542!3d59.93879686208824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTExODY!5e0!3m2!1sru!2sge!4v1686641816980!5m2!1sru!2sge"
+                width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer__logo logo">
+          <a class="logo__home-link" href="./index.html">
+            <!-- <img src="./img/svg/logo.png"> -->
+          </a>
+        </div>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./card.html">
+                Магазины
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в facebook">
+              <svg width="11" height="18" viewbox="0 0 11 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в instagram">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в twitter">
+              <svg width="20" height="17" viewbox="0 0 20 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <div class="copyright__container container">
+          <p>Maroon &#169; все права защищены</p>
+          <a class="copyright__privacy-policy" href="#">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Модалки
     <div class="modal modal--preload" data-modal="feedback">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
@@ -323,7 +545,8 @@
       </div>
     </div> -->
 
-    <script src="js/vendor.min.js"></script>
-    <script src="js/main.min.js"></script>
-  </body>
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
 </html>

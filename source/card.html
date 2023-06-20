@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Натуральная косметика для бережного ухода за кожей">
+  <title>Тестовая страница</title>
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/m-plus-1p-v27-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/raleway-v28-cyrillic_latin-500.woff2" as="font" type="font/woff2" crossorigin>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header header--border">
+      <div class="header__container container">
+        <div class="header__content">
+          <div class="header__logo logo">
+            <a class="logo__home-link" href="./index.html">
+              <svg width="131" height="21" viewBox="0 0 131 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#logo-icon"></use>
+              </svg>
+            </a>
+          </div>
+          <nav class="header__nav nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="./catalog.html">
+                  Каталог
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  О нас
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./card.html">
+                  Магазины
+                </a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">
+                  Контакты
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__buttons header-buttons">
+            <button class="header-buttons__button btn" type="button" aria-label="Перейти в корзину">
+              <svg width="16" height="21" viewBox="0 0 16 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#authentication-icon"></use>
+              </svg>
+            </button>
+            <button class="header-buttons__button btn" type="button" aria-label="Войти в личный кабинет">
+              <svg width="18" height="21" viewbox="0 0 18 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#basket-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="card">
+        <div class="card__container container">
+          <div class="card__content">
+            <div class="card__image-container">
+              <picture>
+                <source type="image/webp" media="(max-width: 320px)"
+                  srcset="./img/products/cards/rose-card-mobile.webp, img/products/cards/rose-card-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)"
+                srcset="./img/products/cards/rose-card-tablet.webp, img/products/cards/rose-card-tablet@2x.webp 2x">
+                <source srcset="./img/products/cards/rose-card-desktop.webp, img/products/cards/rose-card-desktop@2x.webp 2x">
+                <img src="./img/intro-bodycare-desktop.png" srcset="./img/products/bodycare-desktop@2x.png"
+                  alt="заглушка альта">
+              </picture>
+            </div>
+            <div class="card__text-container card-text">
+              <h1 class="card-text__header">Rose</h1>
+              <span class="card-text__subtitle">крем для лица</span>
+              <div class="card-text__description">
+                <p>Увлажняющий крем идеально подходит для повседневного ухода за молодой кожей.</p>
+                <p>Крем равномерно распределяется по поверхности благодаря легкой текстуре, обеспечивает глубокое
+                  увлажнение, регенерацию клеток.</p>
+              </div>
+
+              <div class="card__accordion accordion" data-accordion="parent" data-single="data-single"
+                data-close-inner="data-close-inner">
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button btn" type="button" data-accordion="button">
+                    <span>Состав</span>
+                    <span>+</span>
+                  </button>
+                  <div class="accordion__content" data-accordion="content">
+                    <div class="accordion__wrapper">
+                      <p>Aqua, Cyclomethicone, Dicaprylyl Carbonate, Butylene Glycol, Glycerin, Tapioca Starch,
+                        Nelumbium Speciosum Flower Extract, Calendula Officinalis Flower Extract, Propylene Glycol,
+                        Tocopherol, Glycine Soja Oil, Dimethiconol, Citronellol, Limonene.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion__element" data-accordion="element">
+                  <button class="accordion__button btn" type="button" data-accordion="button">
+                    <span>Способ применения</span>
+                    <span>+</span>
+                  </button>
+                  <div class="accordion__content" data-accordion="content">
+                    <div class="accordion__wrapper">
+                      <p>Нанесите крем на очищенную кожу лица легкими массажными круговыми движениями, избегая области
+                        вокруг глаз. Подходит для дневного и ночного ухода. </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <fieldset>
+                <div class="card__radio__buttons">
+                  <span>Объем</span>
+                  <input class="card__input custom-input" type="radio" id="50ml" name="value" checked>
+                  <label class="card__label" for="50ml">50ml</label>
+                  <input class="card__input custom-input" type="radio" id="30ml" name="value">
+                  <label class="card__label" for="30ml">30ml</label>
+                  <div class="card__row">
+                    <span class="card__price">890 &#8381;</span>
+                    <button class="card__addtokorzina btn">Добавить в корзину</button>
+                  </div>
+                </div>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cognate" id="cognate" data-cognate>
+        <div class="cognate__container container">
+          <h2 class="cognate__header">Вы недавно смотрели</h2>
+          <div class="cognate__slider">
+            <button class="cognate__button cognate__button--prev btn" data-swiper-cognate-prev
+              aria-label="предыдущий слайд.">
+              <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#left-arrow-icon"></use>
+              </svg>
+            </button>
+            <div class="cognate__swiper swiper swiper-cognate">
+              <ul class="swiper-wrapper swiper-cognate-wrapper">
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/clean-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Clean</span>
+                        <span class="product__price">490 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">маска для лица</span>
+                        <span class="product__value">100g</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/lotos-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Lotos</span>
+                        <span class="product__price">890 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">маска для лица</span>
+                        <span class="product__value">50ml</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/lavender-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Lavender</span>
+                        <span class="product__price">290 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">мыло ручной работы</span>
+                        <span class="product__value">50g</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/coconut-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Coconut</span>
+                        <span class="product__price">990 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">масло для тела</span>
+                        <span class="product__value">300ml</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/clean-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Clean II</span>
+                        <span class="product__price">490 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">маска для лица</span>
+                        <span class="product__value">100g</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/lotos-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Lotos II</span>
+                        <span class="product__price">890 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">маска для лица</span>
+                        <span class="product__value">50ml</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/lavender-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Lavender II</span>
+                        <span class="product__price">290 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">мыло ручной работы</span>
+                        <span class="product__value">50g</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+                <li class="swiper-slide cognate__slide" tabindex="0" data-slide-swiper-cognate>
+                  <a class="product__link" href="">
+                    <img src="./img/products/coconut-desktop.png" width="270" height="350">
+                    <div class="product__text-container">
+                      <p class="product__text">
+                        <span class="product__name">Coconut II</span>
+                        <span class="product__price">990 &#8381;</span>
+                      </p>
+                      <p class="product__text">
+                        <span class="product__description">масло для тела</span>
+                        <span class="product__value">300ml</span>
+                      </p>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <button class="cognate__button cognate__button--next btn" data-swiper-cognate-next
+              aria-label="следующий слайд.">
+              <svg width="27" height="14" viewbox="0 0 27 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#right-arrow-icon"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer__logo logo">
+          <a class="logo__home-link" href="./index.html">
+            <!-- <img src="./img/svg/logo.png"> -->
+          </a>
+        </div>
+        <nav class="footer__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="./catalog.html">
+                Каталог
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                О нас
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="./card.html">
+                Магазины
+              </a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="#">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="footer__social social">
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в facebook">
+              <svg width="11" height="18" viewbox="0 0 11 18" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#facebook-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в instagram">
+              <svg width="20" height="20" viewbox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#instagram-icon"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#" aria-label="Аккаунт Maroon-shop в twitter">
+              <svg width="20" height="17" viewbox="0 0 20 17" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#twitter-icon"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright copyright">
+        <div class="copyright__container container">
+          <p>Maroon &#169; все права защищены</p>
+          <a class="copyright__privacy-policy" href="#">
+            Политика конфиденциальности
+          </a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+  <!-- Модалки
+    <div class="modal modal--preload" data-modal="feedback">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Обычная модалка</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
+      <div class="modal__wrapper">
+        <div class="modal__overlay" data-close-modal></div>
+        <div class="modal__content">
+          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
+          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div> -->
+
+  <script src="js/vendor.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

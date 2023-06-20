@@ -1,0 +1,41 @@
+.intro {
+  min-height: 650px;
+  background-image: url(/img/intro-background-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.intro__container {
+  @include main-container-margin-bottom;
+}
+
+.intro-text__header {
+  font-weight: 500;
+  font-size: 58px;
+  line-height: 68px;
+}
+
+.intro__content {
+  padding: 131px 70px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.intro__text {
+  margin: 61px auto 0;
+  text-align: center;
+}
+
+.intro__header {
+  font-size: 58px;
+  line-height: 68px;
+  font-weight: 500;
+}
+
+.intro__subtitle {
+  padding-top: 30px;
+}
+.intro__more {
+  display: inline-block;
+  margin-top: 40px;
+}

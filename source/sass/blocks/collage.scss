@@ -1,0 +1,10 @@
+.collage {
+  display: flex;
+  max-width: 715px;
+  flex-wrap: wrap;
+}
+
+.collage__item {
+  width: fit-content;
+  height: fit-content;
+}

@@ -3,7 +3,7 @@
 
 @import "vendor/normalize";
 // Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/swiper";
 
 // Global
 // ---------------------------------
@@ -17,15 +17,44 @@
 
 // Blocks
 // ---------------------------------
-
+// Index.html
 @import "blocks/btn";
 @import "blocks/modal";
-@import "blocks/custom-input";
+@import "blocks/link.scss";
+// @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
 @import "blocks/test";
+@import "blocks/header.scss";
+@import "blocks/header-buttons.scss";
+@import "blocks/nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/intro-item.scss";
+@import "blocks/bestsellers.scss";
+@import "blocks/promo.scss";
+@import "blocks/questionary.scss";
+@import "blocks/aboutus.scss";
+@import "blocks/joinus.scss";
+@import "blocks/collage.scss";
+@import "blocks/contacts.scss";
+@import "blocks/social.scss";
+@import "blocks/footer.scss";
+@import "blocks/copyright.scss";
 
+// Catalog.html
+@import "blocks/catalog.scss";
+@import "blocks/filter.scss";
+@import "blocks/product.scss";
+@import "blocks/recently.scss";
+
+// Card.html
+@import "blocks/card.scss";
+@import "blocks/cognate.scss";
 // ---------------------------------
+
+// Accordion
+@import "blocks/accordion.scss";
+@import "blocks/data-accordion.scss";
 
 // ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 

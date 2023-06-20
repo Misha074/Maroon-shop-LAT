@@ -1,0 +1,27 @@
+.header--border {
+  border-bottom: 1px  solid $color-light-grey;
+}
+
+.header__container--absolute {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.header__content {
+  min-height: 101px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header__logo {
+  margin-right: auto;
+}
+
+.header__nav {
+  margin-right: 51px;
+}
+

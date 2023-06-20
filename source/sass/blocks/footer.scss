@@ -1,0 +1,18 @@
+.footer {
+  background-color: $color-linen;
+  min-height: 141px;
+}
+
+.footer-container {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  display: flex;
+}
+
+.footer__logo {
+  margin-right: 69px;
+}
+
+.footer__social {
+  margin-left: auto;
+}

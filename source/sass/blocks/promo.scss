@@ -1,0 +1,24 @@
+.promo {
+  min-height: 400px;
+  background-color: $color-heather;
+  background-image: url(/img/banners/promo-background-desktop@2x.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.promo__container {
+  @include main-container-margin-bottom;
+}
+
+.promo__content {
+  padding: 81px 186px 81px 700px;
+}
+
+.promo__subtitle {
+  padding-top: 30px;
+}
+
+.promo__more {
+  margin-top: 40px;
+  display: inline-block;
+}

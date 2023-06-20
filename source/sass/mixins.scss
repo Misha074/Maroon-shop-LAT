@@ -74,6 +74,37 @@
   }
 }
 
+@mixin main-container-margin-bottom {
+  margin-bottom: 140px;
+}
+
+// Миксины для быстрой верстки блока со смещением
+@mixin offset__content {
+  position: relative;
+}
+
+@mixin offset__left-container {
+  padding: 100px 220px 100px 100px;
+  max-width: 670px;
+  background-color: $color-linen;
+}
+
+@mixin offset__text {
+  margin-top: 40px;
+
+  p + p {
+    margin-top: 23px;
+  }
+}
+
+@mixin offset__right-container {
+  position: absolute;
+  right: 0;
+  top: 66px;
+  max-width: 670px;
+  width: 58%;
+}
+
 // Mobile first
 
 // @mixin vp-375 {

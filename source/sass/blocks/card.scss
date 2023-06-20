@@ -1,0 +1,65 @@
+.card__container {
+  padding-top: 40px;
+  @include main-container-margin-bottom
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__image-container {
+  max-width: 630px;
+  max-height: 647px;
+}
+
+.card__text-container {
+  max-width: 370px;
+  padding-top: 50px;
+
+  fieldset {
+    padding: 0;
+
+  }
+}
+
+.card-text__header {
+  margin-bottom: 15px;
+
+  font-size: 32px;
+  line-height: 40px;
+}
+
+.card-text__subtitle {
+  margin-bottom: 45px;
+  display: block;
+
+  font-size: 16px;
+  line-height: 23px;
+  color: $color-grey-chateau;
+}
+
+.card-text__description {
+  margin-bottom: 45px;
+
+  p + p {
+    margin-top: 15px;
+  }
+}
+
+.card__accordion {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.card__label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+}
+
+.card__price {
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 38px;
+}
