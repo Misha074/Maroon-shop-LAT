@@ -2,9 +2,19 @@
   display: flex;
   max-width: 715px;
   flex-wrap: wrap;
+
+  // @include vp-768 {
+  //   max-width: 354px;
+  // }
 }
 
 .collage__item {
   width: fit-content;
   height: fit-content;
+}
+
+.collage__item--disappear {
+  @include vp-768 {
+    display: none;
+  }
 }

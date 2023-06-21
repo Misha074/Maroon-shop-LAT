@@ -1,12 +1,87 @@
+.nav__toggle {
+  display: none;
+  position: relative;
+
+  @include vp-768 {
+    display: block;
+  }
+}
+
+.header__nav--closed .nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: $color-midnight;
+  box-shadow: 0 8px 0 0 $color-midnight, 0 16px 0 0 $color-midnight;
+}
+
+.header__nav--opened .nav__toggle {
+  top: 0;
+  right: auto;
+  left: 0;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0;
+    width: 23px;
+    height: 2px;
+    background-color: $color-midnight;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    background-color: fade($color-midnight, 30%);
+  }
+}
+
+.nav__wrapper {
+  @include vp-768 {
+    position: absolute;
+    width: 200px;
+    background: $color-ivory;
+  }
+}
+
+.nav__wrapper--closed {
+  display: none;
+}
+
 .nav__list {
   display: flex;
+
+  @include vp-768 {
+    flex-direction: column;
+  }
 }
 
 .nav__item {
   font-size: 16px;
   line-height: 21px;
+
+  @include vp-768 {
+    padding: 25px;
+  }
 }
 
 .nav__item + .nav__item {
   margin-left: 35px;
+
+  @include vp-768 {
+    margin-left: 0;
+  }
 }

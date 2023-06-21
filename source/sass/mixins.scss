@@ -38,44 +38,30 @@
 
 // Desktop first
 
-@mixin vp-1919 {
-  @media (max-width: ($vp-1920 - 1px)) {
+@mixin vp-1366 {
+  @media (max-width: ($vp-1366)) {
     @content;
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
+@mixin vp-768 {
+  @media (max-width: ($vp-768)) {
     @content;
   }
 }
 
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1023 {
-  @media (max-width: ($vp-1024 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-374 {
-  @media (max-width: ($vp-375 - 1px)) {
+@mixin vp-320 {
+  @media (max-width: ($vp-320)) {
     @content;
   }
 }
 
 @mixin main-container-margin-bottom {
   margin-bottom: 140px;
+
+  @include vp-768 {
+    margin-bottom: 120px;
+  }
 }
 
 // Миксины для быстрой верстки блока со смещением
@@ -87,6 +73,10 @@
   padding: 100px 220px 100px 100px;
   max-width: 670px;
   background-color: $color-linen;
+
+  @include vp-768 {
+    padding: 60px 281px 60px 60px;
+  }
 }
 
 @mixin offset__text {
@@ -102,7 +92,6 @@
   right: 0;
   top: 66px;
   max-width: 670px;
-  width: 58%;
 }
 
 // Mobile first

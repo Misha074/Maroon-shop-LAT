@@ -6,6 +6,12 @@
 
 .joinus__info {
   padding: 141px 0 141px 71px;
+
+  @include vp-768 {
+    padding-left: 48px;
+    max-width: 324px;
+  }
+
 }
 
 .joinus__text {

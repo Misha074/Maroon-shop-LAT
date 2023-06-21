@@ -10,7 +10,6 @@
   @include offset__left-container;
 }
 
-
 .questionary__text {
   @include offset__text;
 }
@@ -22,4 +21,8 @@
 
 .questionary__image-container {
   @include offset__right-container;
+
+  @include vp-768 {
+    right: -35px;
+  }
 }

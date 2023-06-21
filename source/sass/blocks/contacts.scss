@@ -28,6 +28,9 @@
 }
 
 .contacts__map {
-  max-width: 670px;
   max-height: 422px;
+
+  @include vp-768 {
+    max-width: 369px;
+  }
 }

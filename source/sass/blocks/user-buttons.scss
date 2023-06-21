@@ -1,0 +1,12 @@
+.user-buttons {
+  display: flex;
+}
+
+.user-buttons__button {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.user-buttons__button--basket {
+  padding-right: 0;
+}
