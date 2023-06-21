@@ -1,9 +1,23 @@
 .promo {
   min-height: 400px;
   background-color: $color-heather;
-  background-image: url(/img/banners/promo-background-desktop@2x.png);
+  background-image: url(/img/banners/promo-background-desktop.png);
+
+  @media(min-resolution: 2dppx) {
+    background-image: url(/img/banners/promo-background-desktop@2x.png);
+  }
+
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include vp-768 {
+    min-height: 432px;
+    background-image: url(/img/banners/promo-background-tablet.png);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(/img/banners/promo-background-tablet@2x.png);
+    }
+  }
 }
 
 .promo__container {
@@ -12,6 +26,15 @@
 
 .promo__content {
   padding: 81px 186px 81px 700px;
+
+  @include vp-768 {
+    padding: 97px 40px 97px 354px;
+  }
+}
+
+.promo__text {
+  position: relative;
+  left: 50px;
 }
 
 .promo__subtitle {

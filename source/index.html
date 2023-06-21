@@ -29,37 +29,47 @@
               </svg>
             </a>
           </div>
-          <nav class="header__nav nav">
-            <ul class="nav__list">
-              <li class="nav__item">
-                <a class="nav__link" href="./catalog.html">
-                  Каталог
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">
-                  О нас
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="./card.html">
-                  Магазины
-                </a>
-              </li>
-              <li class="nav__item">
-                <a class="nav__link" href="#">
-                  Контакты
-                </a>
-              </li>
-            </ul>
+          <nav class="header__nav header__nav--closed nav">
+            <button type="button" class="nav__toggle btn">
+              <!-- <svg width="22" height="13" viewbox="0 0 22 13" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <use xlink:href="./img/sprite.svg#burger-icon"></use>
+              </svg> -->
+            </button>
+            <div class="nav__wrapper nav__wrapper--closed">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="./catalog.html">
+                    Каталог
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    О нас
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="./card.html">
+                    Магазины
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link" href="#">
+                    Контакты
+                  </a>
+                </li>
+              </ul>
+            </div>
+
           </nav>
-          <div class="header__buttons header-buttons">
-            <button class="header-buttons__button btn" type="button" aria-label="Перейти в корзину">
+          <div class="header__user-buttons user-buttons">
+            <button class="user-buttons__button user-buttons__button--auth btn" type="button"
+              aria-label="Перейти в корзину">
               <svg width="16" height="21" viewBox="0 0 16 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#authentication-icon"></use>
               </svg>
             </button>
-            <button class="header-buttons__button btn" type="button" aria-label="Войти в личный кабинет">
+            <button class="user-buttons__button user-buttons__button--basket btn" type="button"
+              aria-label="Войти в личный кабинет">
               <svg width="18" height="21" viewbox="0 0 18 21" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="./img/sprite.svg#basket-icon"></use>
               </svg>
@@ -74,13 +84,12 @@
           <div class="intro__content">
             <div class="intro__item intro-item">
               <picture>
-                <source media="(max-width: 320px)"
-                  srcset="./img/intro-facecare-mobile.webp, img/intro-facecare-mobile@2x.webp 2x">
-                <source media="(max-width: 768px)"
-                  srcset="./img/intro-facecare-tablet.webp, img/intro-facecare-tablet@2x.webp 2x">
-                <source srcset="./img/intro-facecare-desktop.webp, img/intro-facecare-desktop@2x.webp 2x">
-                <img src="./img/intro-facecare-desktop.png" srcset="./img/products/facecare-desktop@2x.png"
-                  alt="Баночки с белым кремом и лист папоротника">
+                <source media="(min-width: 1366px)"
+                  srcset="img/intro-facecare-desktop.webp 1x, img/intro-facecare-desktop.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/intro-facecare-tablet.webp 1x, img/intro-facecare-tablet@2x.webp 2x">
+                <img src="img/intro-facecare-mobile.webp" srcset="img/intro-facecare-mobile@2x.webp 2x"
+                  alt="текст заглушка">
               </picture>
               <button class="intro-item__more-button btn">
                 Уход для лица
@@ -103,13 +112,12 @@
             </div>
             <div class="intro__item intro-item">
               <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/intro-bodycare-mobile.webp, img/intro-bodycare-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/intro-bodycare-tablet.webp, img/intro-bodycare-tablet@2x.webp 2x">
-                <source srcset="./img/intro-bodycare-desktop.webp, img/intro-bodycare-desktop@2x.webp 2x">
-                <img src="./img/intro-bodycare-desktop.png" srcset="./img/products/bodycare-desktop@2x.png"
-                  alt="Баночки с белым кремом и лист подорожника">
+                <source media="(min-width: 1366px)"
+                  srcset="img/intro-bodycare-desktop.webp 1x, img/intro-bodycare-desktop.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/intro-bodycare-tablet.webp 1x, img/intro-bodycare-tablet@2x.webp 2x">
+                <img src="img/intro-bodycare-mobile.webp" srcset="img/intro-bodycare-mobile@2x.webp 2x"
+                  alt="текст заглушка">
               </picture>
               <button class="intro-item__more-button btn">
                 Уход для Тела
@@ -146,7 +154,14 @@
                 <ul class="swiper-wrapper swiper-bestsellers-wrapper">
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/high-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/high-desktop.webp 1x, img/products/bestsellers/high-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/high-tablet.webp 1x, img/products/bestsellers/high-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/high-mobile.webp"
+                          srcset="img/products/bestsellers/high-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">High</p>
                         <p class="bestsellers__type">крем для лица</p>
@@ -157,12 +172,12 @@
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
                       <picture>
-                        <source media="(max-width: 320px)"
-                          srcset="./img/products/rest-mobile.webp, img/products/rest-mobile@2x.webp 2x">
-                        <source media="(max-width: 768px)"
-                          srcset="./img/products/rest-tablet.webp, img/products/rest-tablet@2x.webp 2x">
-                        <img src="./img/products/rest-desktop.webp" srcset="./img/products/rest-desktop@2x.webp"
-                          width="230" height="312" alt="текст заглушка">
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/rest-desktop.webp 1x, img/products/bestsellers/rest-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/rest-tablet.webp 1x, img/products/bestsellers/rest-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/rest-mobile.webp"
+                          srcset="img/products/bestsellers/rest-mobile@2x.webp 2x" alt="текст заглушка">
                       </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Rest</p>
@@ -173,7 +188,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/rose-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/rose-desktop.webp 1x, img/products/bestsellers/rose-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/rose-tablet.webp 1x, img/products/bestsellers/rose-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/rose-mobile.webp"
+                          srcset="img/products/bestsellers/rose-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Rose</p>
                         <p class="bestsellers__type">крем для лица</p>
@@ -183,7 +205,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/milk-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/milk-desktop.webp 1x, img/products/bestsellers/milk-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/milk-tablet.webp 1x, img/products/bestsellers/milk-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/milk-mobile.webp"
+                          srcset="img/products/bestsellers/milk-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Milk</p>
                         <p class="bestsellers__type">масло для тела</p>
@@ -193,7 +222,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/high-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/high-desktop.webp 1x, img/products/bestsellers/high-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/high-tablet.webp 1x, img/products/bestsellers/high-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/high-mobile.webp"
+                          srcset="img/products/bestsellers/high-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">High II</p>
                         <p class="bestsellers__type">крем для лица</p>
@@ -203,7 +239,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/rest-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/rest-desktop.webp 1x, img/products/bestsellers/rest-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/rest-tablet.webp 1x, img/products/bestsellers/rest-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/rest-mobile.webp"
+                          srcset="img/products/bestsellers/rest-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Rest II</p>
                         <p class="bestsellers__type">минеральная пудра</p>
@@ -213,7 +256,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/rose-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/rose-desktop.webp 1x, img/products/bestsellers/rose-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/rose-tablet.webp 1x, img/products/bestsellers/rose-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/rose-mobile.webp"
+                          srcset="img/products/bestsellers/rose-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Rose II</p>
                         <p class="bestsellers__type">крем для лица</p>
@@ -223,7 +273,14 @@
                   </li>
                   <li class="swiper-slide bestsellers__slide" tabindex="0" data-slide-swiper-bestsellers>
                     <div class="bestsellers__item" href="">
-                      <img src="./img/products/milk-desktop.png" width="230" height="312">
+                      <picture>
+                        <source media="(min-width: 1366px)"
+                          srcset="img/products/bestsellers/milk-desktop.webp 1x, img/products/bestsellers/milk-desktop@2x.webp 2x">
+                        <source media="(min-width: 768px)"
+                          srcset="img/products/bestsellers/milk-tablet.webp 1x, img/products/bestsellers/milk-tablet@2x.webp 2x">
+                        <img src="img/products/bestsellers/milk-mobile.webp"
+                          srcset="img/products/bestsellers/milk-mobile@2x.webp 2x" alt="текст заглушка">
+                      </picture>
                       <div class="bestsellers__text-container">
                         <p class="bestsellers__name">Milk II</p>
                         <p class="bestsellers__type">масло для тела</p>
@@ -231,7 +288,6 @@
                       </div>
                     </div>
                   </li>
-
                 </ul>
               </div>
               <button class="bestsellers__button bestsellers__button--next btn" data-swiper-bestsellers-next
@@ -281,11 +337,16 @@
               </a>
             </div>
             <div class="questionary__image-container">
-              <img width="670" height="451" src="./img/questionary-image-desktop.png"
-                alt="Два бутылька масла, колба с багровой солью и куски натурального мыла на фоне сухоцветов и двух крупных зеленых листов">
+              <picture>
+                <source media="(min-width: 1366px)"
+                  srcset="img/questionary-image-desktop.webp 1x, img/questionary-image-desktop@2x.webp 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/questionary-image-tablet.webp 1x, img/questionary-image-tablet@2x.webp 2x">
+                <img src="img/questionary-image-mobile.webp" srcset="img/questionary-image-mobile@2x.webp 2x"
+                  alt="текст заглушка">
+              </picture>
             </div>
           </div>
-
         </div>
       </section>
       <section class="aboutus">
@@ -302,73 +363,56 @@
           </a>
         </div>
       </section>
+
       <section class="joinus">
         <div class="joinus__container container">
           <ul class="joinus__collage collage">
-            <li class="collage__item">
-              <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage1-mobile.webp, /img/joinus-collage/joinus-collage1-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage1-tablet.webp, /img/joinus-collage/joinus-collage1-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="./img/joinus-collage/joinus-collage1-desktop.webp, /img/joinus-collage/joinus-collage1-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage1-desktop.webp" alt="текст заглушка альта">
-              </picture>
+            <li class="collage__item collage__item--disappear">
+              <img src="./img/joinus-collage/joinus-collage1-desktop.webp"
+                srcset="./img/joinus-collage/joinus-collage1-desktop@2x.webp 2x">
             </li>
             <li class="collage__item">
               <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage2-mobile.webp, /img/joinus-collage/joinus-collage2-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage2-tablet.webp, /img/joinus-collage/joinus-collage2-tablet@2x.webp 2x">
-                <source type="image/webp"
+                <source type="image/webp" media="(min-width: 1366px)"
                   srcset="./img/joinus-collage/joinus-collage2-desktop.webp, /img/joinus-collage/joinus-collage2-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage2-desktop.webp" alt="текст заглушка альта">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage2-tablet.webp, /img/joinus-collage/joinus-collage2-tablet@2x.webp 2x">
+                <img src="./img/joinus-collage/joinus-collage2-mobile.webp"
+                  srcset="img/joinus-collage/joinus-collage2-mobile@2x.webp 2x" alt="текст заглушка">
               </picture>
             </li>
             <li class="collage__item">
               <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage3-mobile.webp, /img/joinus-collage/joinus-collage3-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage3-tablet.webp, /img/joinus-collage/joinus-collage3-tablet@2x.webp 2x">
-                <source type="image/webp"
+                <source type="image/webp" media="(min-width: 1366px)"
                   srcset="./img/joinus-collage/joinus-collage3-desktop.webp, /img/joinus-collage/joinus-collage3-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage2-desktop.webp" alt="текст заглушка альта">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage3-tablet.webp, /img/joinus-collage/joinus-collage3-tablet@2x.webp 2x">
+                <img src="./img/joinus-collage/joinus-collage3-mobile.webp"
+                  srcset="img/joinus-collage/joinus-collage3-mobile@2x.webp 2x" alt="текст заглушка">
               </picture>
+            </li>
+            <li class="collage__item collage__item--disappear">
+              <img src="./img/joinus-collage/joinus-collage4-desktop.webp"
+                srcset="./img/joinus-collage/joinus-collage4-desktop@2x.webp 2x">
             </li>
             <li class="collage__item">
               <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage4-mobile.webp, /img/joinus-collage/joinus-collage4-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage4-tablet.webp, /img/joinus-collage/joinus-collage4-tablet@2x.webp 2x">
-                <source type="image/webp"
-                  srcset="./img/joinus-collage/joinus-collage4-desktop.webp, /img/joinus-collage/joinus-collage4-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage4-desktop.webp" alt="текст заглушка альта">
-              </picture>
-            </li>
-            <li class="collage__item">
-              <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage5-mobile.webp, /img/joinus-collage/joinus-collage5-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage5-tablet.webp, /img/joinus-collage/joinus-collage5-tablet@2x.webp 2x">
-                <source type="image/webp"
+                <source type="image/webp" media="(min-width: 1366px)"
                   srcset="./img/joinus-collage/joinus-collage5-desktop.webp, /img/joinus-collage/joinus-collage5-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage5-desktop.webp" alt="текст заглушка альта">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage5-tablet.webp, /img/joinus-collage/joinus-collage5-tablet@2x.webp 2x">
+                <img src="./img/joinus-collage/joinus-collage5-mobile.webp"
+                  srcset="img/joinus-collage/joinus-collage5-mobile@2x.webp 2x" alt="текст заглушка">
               </picture>
             </li>
             <li class="collage__item">
               <picture>
-                <source type="image/webp" media="(max-width: 320px)"
-                  srcset="./img/joinus-collage/joinus-collage6-mobile.webp, /img/joinus-collage/joinus-collage6-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 768px)"
-                  srcset="./img/joinus-collage/joinus-collage6-tablet.webp, /img/joinus-collage/joinus-collage6-tablet@2x.webp 2x">
-                <source type="image/webp"
+                <source type="image/webp" media="(min-width: 1366px)"
                   srcset="./img/joinus-collage/joinus-collage6-desktop.webp, /img/joinus-collage/joinus-collage6-desktop@2x.webp 2x">
-                <img width="237" height="233" src="./img/joinus-collage6-desktop.webp" alt="текст заглушка альта">
+                <source type="image/webp" media="(min-width: 768px)"
+                  srcset="./img/joinus-collage/joinus-collage6-tablet.webp, /img/joinus-collage/joinus-collage6-tablet@2x.webp 2x">
+                <img src="./img/joinus-collage/joinus-collage6-mobile.webp"
+                  srcset="img/joinus-collage/joinus-collage6-mobile@2x.webp 2x" alt="текст заглушка">
               </picture>
             </li>
           </ul>
@@ -438,7 +482,6 @@
                   </li>
                 </ul>
               </div>
-
             </div>
             <div class="contacts__map-container">
               <iframe class="contacts__map"

@@ -15,13 +15,34 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+
+  @include vp-768 {
+    justify-content: space-between;
+  }
 }
 
 .header__logo {
   margin-right: auto;
+
+
+  @include vp-768 {
+    order: 2;
+    margin-right: unset;
+  }
 }
 
 .header__nav {
   margin-right: 51px;
+
+  @include vp-768 {
+    order: 1;
+    margin-right: 0;
+  }
+}
+
+.header__user-buttons {
+  @include vp-768 {
+    order: 3;
+  }
 }
 

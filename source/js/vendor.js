@@ -90,7 +90,7 @@ function initSwiperBestsellers() {
           slidesPerView: 2,
           spaceBetween: 30,
         },
-        1200: {
+        1366: {
           slidesPerView: 4,
           spaceBetween: 30,
         },
